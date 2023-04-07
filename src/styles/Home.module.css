@@ -1,0 +1,170 @@
+.NavBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+  height: 20vh;
+}
+.title {
+  color: #ffff;
+}
+/*Social icon*/
+.socialIcon {
+  width: 2.5rem;
+  margin: 0 0.5rem;
+  height: auto;
+  filter: invert(1);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.socialIcon:hover {
+  scale: 1.5;
+}
+/*Contenedor de informacion*/
+.infoCont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 70vh;
+  margin: 0 auto;
+}
+/*Informacion de la parte izquierda*/
+.infoIzqCont {
+  width: 50%;
+}
+.infoLeyendaCont {
+}
+.infoMeet {
+  font-size: 2.7em;
+  font-weight: 300;
+  margin: 0.5rem 0;
+}
+.infoIm {
+  font-size: 2.7em;
+  font-weight: 300;
+  margin: 0.5rem 0;
+}
+.name {
+  font-style: italic;
+  font-size: 1.3em;
+}
+.infoLeyenda {
+  font-size: 1.1em;
+  width: 75%;
+  font-weight: 300;
+  margin: 0.5rem 0;
+  color: #969696;
+}
+.btnContactMe {
+  cursor: pointer;
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  border: 0;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 15px;
+  transition: all .5s ease;
+ }
+ 
+ .btnContactMe:hover {
+  letter-spacing: 3px;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
+  box-shadow: hsl(0, 0%, 100%) 0px 7px 29px 0px;
+ }
+ 
+ .btnContactMe:active {
+  letter-spacing: 3px;
+  background-color: hsl(261deg 80% 48%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+  transform: translateY(10px);
+  transition: 100ms;
+ }
+/*Informacion de la parte derecha*/
+.infoDerCont {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.computer {
+  width: 30rem;
+}
+/*Para tablets*/
+@media (max-width: 1000px) {
+  .NavBar{
+    justify-content: center;
+  }
+  .title{
+    display: none;
+  }
+  .socialIcon{
+    width: 4rem;
+    margin: 0 1rem;
+  }
+  .infoCont{
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .infoIzqCont{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .infoDerCont{
+    width: 80%;
+  }
+  .infoLeyendaCont{
+    text-align: center;
+  }
+  .infoLeyenda{
+    margin: 0 auto;
+  }
+}/*Para moviles*/
+@media (max-width: 750px) {
+  .NavBar{
+    
+  }
+  .socialIcon{
+    width: 2.5rem;
+    margin: 0 0.8rem;
+  }
+  .btnContactMe{
+    margin: 2rem 0;
+  }
+  .infoIzqCont{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .infoDerCont{
+    width: 90%;
+  }
+  .infoLeyendaCont{
+    text-align: center;
+  }
+  .infoLeyenda{
+    margin: 0 auto;
+  }
+  .infoMeet{
+    font-size: 2em;
+  }
+  .infoIm{
+    font-size: 2em;
+  }
+  .infoLeyenda{
+    font-size: 1em;
+  }
+  .computer {
+    width: 15rem;
+  }
+}
